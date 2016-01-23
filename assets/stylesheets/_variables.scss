@@ -1,0 +1,75 @@
+$very-light-grey: #f9f9f9;
+$light-grey: #efefef;
+$medium-grey: #d4d2d3;
+$dark-grey: #3d3d3e;
+$very-dark-grey: #313132;
+$light-blue: #7ed5db;
+$red: #eb4646;
+$light-purple: #93a6ea;
+$light-green: #7cc576;
+
+
+%tran-slow {
+	transition:0.8s;
+}
+
+%tran {
+	transition:0.3s;
+}
+
+%tran-fast {
+	transition:0.2s;
+}
+
+@keyframes wobble {
+	0% {
+		transform:translatex(0);
+	}
+	25% {
+		transform:translatex(2px);
+	}
+	50% {
+		transform:translatex(0);
+	}
+	75% {
+		transform:translatex(-2px);
+	}
+	100% {
+		transform:translatex(0);
+	}
+}
+
+%vertical-padding-extra-large {
+	padding-top:160px;
+	padding-bottom:160px;
+}
+
+%vertical-padding-large {
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+%vertical-padding {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+%vertical-padding-small {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+%horizontal-padding-large {
+	padding-left:30px;
+	padding-right:30px;
+}
+
+%horizontal-padding {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+%horizontal-padding-small {
+	padding-left:5px;
+	padding-right:5px;
+}
