@@ -39,6 +39,42 @@ $light-green: #7cc576;
 	}
 }
 
+@keyframes bgColorer {
+	0% {
+		background: $red;
+	}
+	25% {
+		background: $light-blue;
+	}
+	50% {
+		background: $light-green;
+	}
+	75% {
+		background: $light-purple;
+	}
+	100% {
+		background: $red;
+	}
+}
+
+// @keyframes fontColorer {
+// 	0% {
+// 		color: $red;
+// 	}
+// 	25% {
+// 		color: $light-blue;
+// 	}
+// 	50% {
+// 		color: $light-green;
+// 	}
+// 	75% {
+// 		color: $light-purple;
+// 	}
+// 	100% {
+// 		color:$red;
+// 	}
+// }
+
 %vertical-padding-extra-large {
 	padding-top:160px;
 	padding-bottom:160px;

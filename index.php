@@ -78,6 +78,22 @@
 	</div>
 </section>
 
+<section id="ready-to-work">
+	<div class="container">
+		<img alt="With great design always comes great photography" data-layzr="<?php echo $url; ?>/assets/images/home/camera.png">
+		<div class="inner">
+			<h3>Ready to work with us?</h3>
+			<p>say hello <a href="mailto:info@whiterockstudios.co.uk">info@whiterockstudios.co.uk</a></p>
+			<ul>
+				<li class="menu-icon"><a href="<?php echo $url; ?>"><i class="icon-pinterest"></i></a></li>
+				<li class="menu-icon"><a href="<?php echo $url; ?>"><i class="icon-twitter"></i></a></li>
+				<li class="menu-icon"><a href="<?php echo $url; ?>"><i class="icon-instagram"></i></a></li>
+			</ul>
+		</div>
+		<img alt="Coffee fuels web developers" data-layzr="<?php echo $url; ?>/assets/images/home/coffee.png">
+	</div>
+</section>
+
 <?php
 	include "partials/footer.php";
 ?>

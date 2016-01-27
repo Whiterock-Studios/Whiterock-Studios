@@ -186,7 +186,7 @@ header {
 
 .header-scroll {
 	&:after{
-		background:$dark-grey;
+		animation: bgColorer 5s infinite;
 	}
 }
 
