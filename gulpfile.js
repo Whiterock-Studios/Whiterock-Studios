@@ -15,7 +15,8 @@ gulp.task('javascripts',function() {
         .pipe(gulp.dest('assets/javascripts'))
         .pipe(rename('main.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('assets/javascripts'));
+        .pipe(gulp.dest('assets/javascripts'))
+		.pipe(livereload());
 });
 
 

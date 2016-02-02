@@ -5,20 +5,7 @@ jQuery(document).ready(function($) {
 	    } else {
 	       $("header").removeClass('header-scroll');
 	    }
-	    // if($(window).scrollTop() > 800 && $(window).scrollTop() < 1200) {
-	    // 	$('header').addClass('redbg');
-	    // 	$('header').removeClass('bluebg');
-	    // } else if($(window).scrollTop() > 1200 && $(window).scrollTop() < 1600) {
-	    // 	$('header').addClass('bluebg');
-	    // 	$('header').removeClass('redbg');
-	    // }
 	});
-
-	// $('#burger').hover(function() {
-	// 	$('main').addClass('blur');
-	// }, function() {
-	// 	$('main').removeClass('blur');
-	// });
 
 	// grab an element
 	var myElement = document.querySelector("header");

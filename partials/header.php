@@ -20,7 +20,7 @@ $url = "http://localhost/wr";
 				<span></span>
 				<span></span>
 			</div>
-			<section id="main-menu-inner" class="menu-closed bg-move" data-layzr="<?php echo $url; ?>/assets/images/main-bg.png" data-layzr-bg>
+			<section id="main-menu-inner" class="menu-closed" data-layzr="<?php echo $url; ?>/assets/images/main-bg.png" data-layzr-bg>
 				<ul>
 					<li><a href="<?php echo $url; ?>">Home</a></li>
 					<li><a href="<?php echo $url; ?>/graphic-design">Design</a></li>

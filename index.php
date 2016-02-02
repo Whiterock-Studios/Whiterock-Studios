@@ -98,22 +98,23 @@
 	<div class="container">
 		<h3>Need more?</h3>
 
-		<div class="circle-wrapper">
-		  <div class="circle spinner"></div>
-		  <div class="circle filler"></div>
-		  <div class="mask"></div>
+		<div class="circle-container">
+			<div class="circle circle-1 c-100">
+				<span>100%</span>
+			</div>
+			<p>of our clients would recommend us</p>
 		</div>
-
-		<div class="circle-wrapper">
-		  <div class="circle spinner"></div>
-		  <div class="circle filler"></div>
-		  <div class="mask"></div>
+		<div class="circle-container">
+			<div class="circle circle-2 c-75">
+				<span>75%</span>
+			</div>
+			<p>of our clients came back for more</p>
 		</div>
-
-		<div class="circle-wrapper">
-		  <div class="circle spinner"></div>
-		  <div class="circle filler"></div>
-		  <div class="mask"></div>
+		<div class="circle-container">
+			<div class="circle circle-3 c-100">
+				<span class="smiley-span">1<strong>00</strong>%</span>
+			</div>
+			<p>is how much effort we put in to making your dream come true</p>
 		</div>
 	</div>
 </section>
