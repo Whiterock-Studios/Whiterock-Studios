@@ -1,30 +1,39 @@
-jQuery(document).ready(function($) {
+document.addEventListener( "DOMContentLoaded" , function ()
+{
 
-var $circleTop = $('.circle-1').offset().top,
-	$windowScroll = $(window).scrollTop(),
-	$circleCounter = 1,
-	$x = 0;
+	console.log( "DOM Loaded" );
+	var circleTop = (document.getElementById( "circle-1" ).offsetTop) + 500 ,
+		windowScroll = window.pageYOffset || document.documentElement.scrollTop ,
+		circleCounter = 1 ,
+		x = 0;
 
-	$(window).scroll(function() {
-		$windowScroll = $(window).scrollTop();
+	function circleLoad ()
+	{
+		document.getElementById( "circle-" + circleCounter ).classList.add( "circle-load" );
 
+		if ( circleCounter > 3 ) {
+			clearInterval( circleInterval );
+		}
+		circleCounter ++;
+	}
 
-		if ( $circleTop <= $windowScroll ){
-			if ($x == 0){
-				$x = 1;
-				function circleLoad() {
-					$('.circle-' + $circleCounter).addClass('circle-load');
+	document.onscroll = function ()
+	{
 
-					if ( $circleCounter > 3 ) {
-						clearInterval($circleInterval);
-					}
-					$circleCounter++;
-				};
+		windowScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-				$circleInterval = setInterval(circleLoad, 800);
-			} 
-		} // end if scroll is past intial
-	}); // end of window scroll
-}); // end of document ready
+		console.log( "WindowScroll = " + windowScroll + " Circle Scroll = " + circleTop
+		)
+		;
+		if ( circleTop <= windowScroll && x == 0 ) {
 
+			x = 1;
+
+			circleLoad();
+
+			circleInterval = setInterval( circleLoad , 1000 );
+		}
+	}
+
+} );
 

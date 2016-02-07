@@ -1,16 +1,21 @@
-jQuery(document).ready(function($) {
-	$(window).on("scroll", function() {
-	    if($(window).scrollTop() > 300) {
-	        $("header").addClass('header-scroll');
-	    } else {
-	       $("header").removeClass('header-scroll');
+document.addEventListener("DOMContentLoaded", function ()
+{
+	window.onscroll = function()
+	{
+		if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+		{
+	        document.querySelector("header").classList.add("header-scroll");
 	    }
-	});
+	    else
+	    {
+	        document.querySelector("header").classList.remove("header-scroll");
+	    }
+	}
 
 	// grab an element
-	var myElement = document.querySelector("header");
+	var myElement = document.querySelector("header"),
 	// construct an instance of Headroom, passing the element
-	var headroom  = new Headroom(myElement);
+	headroom  = new Headroom(myElement);
 	// initialise
 	headroom.init();
 });
