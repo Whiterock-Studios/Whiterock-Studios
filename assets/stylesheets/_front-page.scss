@@ -6,83 +6,83 @@
 	@include outer-container(800px);
 	@extend %vertical-padding-large;
 	@extend %horizontal-padding-large;
-	text-align:center;
-		h1,h2,h3,h4,h5,h6 {
-			font-size:2em;
-			margin-bottom:40px;
-		}
+	text-align: center;
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 2em;
+		margin-bottom: 40px;
+	}
 }
 
 #home_call-to-action-sections {
 	.outer-container {
-		position:relative;
-		display:flex;
-		flex-wrap:wrap;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
 	}
-	h1,h2,h3,h4,h5,h6 {
-		font-size:2em;
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 2em;
 	}
 	p {
-		font-size:1.30em;
-		margin-bottom:25px;
+		font-size: 1.30em;
+		margin-bottom: 25px;
 	}
 	.image-container, .body {
-		position:relative;
+		position: relative;
 	}
 	.image-container {
 		@extend %vertical-padding-large;
 		@extend %horizontal-padding-large;
 		@include span-columns(5);
-		@include media($tablet){
+		@include media($tablet) {
 			@include span-columns(10);
-			padding-top:0;
+			padding-top: 0;
 		}
 		img {
-			display:block;
-			margin:0 auto;
-			max-height:440px;
-			max-width:100%;
+			display: block;
+			margin: 0 auto;
+			max-height: 440px;
+			max-width: 100%;
 		}
 	}
 	.body {
 		@include span-columns(5);
-		@include media($tablet){
+		@include media($tablet) {
 			@include span-columns(10 of 10);
 		}
 		.inner-body {
 			@extend %vertical-padding-large;
 			@extend %horizontal-padding-large;
-			position:absolute;
-			top:50%;
-			left:0;
-			transform:translatey(-50%);
-			max-width:450px;
-				@include media($tablet){
-					position:relative;
-					top:0;
-					transform:translate(0);
-					text-align:center;
-					margin:0 auto;
-				}
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translatey(-50%);
+			max-width: 450px;
+			@include media($tablet) {
+				position: relative;
+				top: 0;
+				transform: translate(0);
+				text-align: center;
+				margin: 0 auto;
+			}
 		}
 	}
 	.home_section {
-		&:nth-of-type(even){
+		&:nth-of-type(even) {
 			.body {
 				@include shift(5 of 10);
-					@include media($tablet){
-						@include shift(0);
-					}
-					.inner-body {
-						left:auto;
-						right:0;
-					}
+				@include media($tablet) {
+					@include shift(0);
+				}
+				.inner-body {
+					left: auto;
+					right: 0;
+				}
 			}
 			.image-container {
 				@include shift(-10 of 10);
-					@include media($tablet){
-						@include shift(0);
-					}
+				@include media($tablet) {
+					@include shift(0);
+				}
 			}
 		}
 	}
@@ -90,211 +90,211 @@
 
 #taste-of-design {
 	@extend %vertical-padding-extra-large;
-	background:#fff;
-	text-align:center;
-	h1,h2,h3,h4,h5,h6 {
+	background: #fff;
+	text-align: center;
+	h1, h2, h3, h4, h5, h6 {
 		font-size: 2em;
-		margin-bottom:40px;
+		margin-bottom: 40px;
 	}
-		.inner {
-			@extend %horizontal-padding-large;
-			position:relative;
-			display:inline-block;
-				img {
-					position:absolute;
-					left:-125px;
-					top:-50px;
-						@include media($tablet){
-							position:relative;
-							left:0;
-							top:0;
-							margin-bottom:20px;
-						}
-				}
+	.inner {
+		@extend %horizontal-padding-large;
+		position: relative;
+		display: inline-block;
+		img {
+			position: absolute;
+			left: -125px;
+			top: -50px;
+			@include media($tablet) {
+				position: relative;
+				left: 0;
+				top: 0;
+				margin-bottom: 20px;
+			}
 		}
+	}
 }
 
 #ready-to-work {
 	@extend %horizontal-padding-large;
 	background: $light-grey;
-	display:block;
-		.container {
-			@include outer-container(1200px);
-			position:relative;
-			text-align:center;
-				img {
-					clear:both;
-					display:block;
-					&:nth-of-type(1) {
-						margin-bottom:-250px;
-						float:right;
-					}
-					&:nth-of-type(2) {
-						margin-top:-250px;
-						float:left;
-					}
-					@include media(max-width 1150px){
-						&:nth-of-type(1) {
-						margin-bottom:-150px;
-						}
-						&:nth-of-type(2) {
-							margin-top:-150px;
-						}
-					}
+	display: block;
+	.container {
+		@include outer-container(1200px);
+		position: relative;
+		text-align: center;
+		img {
+			clear: both;
+			display: block;
+			&:nth-of-type(1) {
+				margin-bottom: -250px;
+				float: right;
+			}
+			&:nth-of-type(2) {
+				margin-top: -250px;
+				float: left;
+			}
+			@include media(max-width 1150px) {
+				&:nth-of-type(1) {
+					margin-bottom: -150px;
 				}
-				.inner {
-					@extend %vertical-padding-extra-large;
-					display:block;
-					width:100%;
-					float:left;
-				}
-		}
-		h3 {
-			font-size:2.5em;
-		}
-		p {
-			font-size:1.5em;
-				a {
-					text-decoration:none;
-					color:inherit;
-				}
-		}
-		ul {
-			list-style-type: none;
-			margin:40px 0 0 0;
-			padding:0;
-			&:hover {
-				a {
-					filter:blur(0.05em);
+				&:nth-of-type(2) {
+					margin-top: -150px;
 				}
 			}
-				li {
-					display:inline;
-						a {
-							@extend %tran;
-							color:#fff;
-							font-size:2em;
-							padding:15px;
-								&:hover {
-									filter: blur(0);
-								}
-						}
-				}
 		}
+		.inner {
+			@extend %vertical-padding-extra-large;
+			display: block;
+			width: 100%;
+			float: left;
+		}
+	}
+	h3 {
+		font-size: 2.5em;
+	}
+	p {
+		font-size: 1.5em;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	ul {
+		list-style-type: none;
+		margin: 40px 0 0 0;
+		padding: 0;
+		&:hover {
+			a {
+				filter: blur(0.05em);
+			}
+		}
+		li {
+			display: inline;
+			a {
+				@extend %tran;
+				color: #fff;
+				font-size: 2em;
+				padding: 15px;
+				&:hover {
+					filter: blur(0);
+				}
+			}
+		}
+	}
 }
 
 #need-more {
 	@extend %horizontal-padding-large;
 	background: $red;
-	color:#fff;
-	text-align:center;
+	color: #fff;
+	text-align: center;
 
 	.container {
 		@include outer-container(1000px);
 	}
 
-	h1,h2,h3,h4,h5,h6 {
-		font-size:2.5em;
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 2.5em;
 		@extend %vertical-padding-large;
 	}
 
 	.circle-container {
 		@include span-columns(1 of 3);
-		margin-bottom:80px;
-		
-		@include media($tablet){
+		margin-bottom: 80px;
+
+		@include media($tablet) {
 			@include span-columns(1 of 1);
 		}
 
 		p {
-			font-size:1.2em;
+			font-size: 1.2em;
 		}
 	}
 
 	.circle {
 		position: relative;
-		display:inline-block;
-		width:200px;
-		height:200px;
-		border:solid 1px #fff;
-		border-radius:100%;
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		border: solid 1px #fff;
+		border-radius: 100%;
 
+		&:after {
+			transition: 1s ease-in-out;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: solid 5px #fff;
+			border-radius: 100%;
+			clip: rect(0px, 0px, 200px, 0px);
+			transform: rotate(0deg);
+		}
+
+		span {
+			@extend %tran-slow;
+			font-size: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.smiley-span {
 			&:after {
-				transition: 1s ease-in-out;
-				content: "";
-				position:absolute;
-				top:0;
-				left:0;
-				width:100%;
-				height:100%;
-				border:solid 5px #fff;
-				border-radius:100%;
-				clip: rect(0px,0px,200px,0px);
-				transform:rotate(0deg);
-			}
-
-			span {
 				@extend %tran-slow;
-				font-size:0;
-				position:absolute;
-				top:50%;
-				left:50%;
-				transform:translate(-50%,-50%);
+				content: "";
+				position: absolute;
+				height: 60px;
+				width: 70px;
+				opacity: 0;
+				top: 0.4em;
+				left: 1.2em;
+				border: solid 3px #fff;
+				border-radius: 100%;
+				transform: translatex(-50%);
+				z-index: -2;
 			}
-
-			.smiley-span {
-				&:after {
-					@extend %tran-slow;
-					content:"";
-					position:absolute;
-					height:60px;
-					width:70px;
-					opacity:0;
-					top:0.4em;
-					left:1.2em;
-					border: solid 3px #fff;
-					border-radius:100%;
-					transform:translatex(-50%);
-					z-index:-2;
-				}
-				&:before {
-					content: "";
-					position:absolute;
-					background:$red;
-					height:45px;
-					width:80px;
-					top:0.4em;
-					left:1.2em;
-					transform:translatex(-50%);
-					z-index:-1;
-				}
+			&:before {
+				content: ""; // TODO: FIx issues with weird smiley desposition on chrome
+				position: absolute;
+				background: $red;
+				height: 45px;
+				width: 80px;
+				top: 0.4em;
+				left: 1.2em;
+				transform: translatex(-50%);
+				z-index: -1;
 			}
+		}
 	}
 
 	.circle-load {
 		&:after {
-			transform:rotate(360deg);
+			transform: rotate(360deg);
 		}
 		span {
-			font-size:2em;
+			font-size: 2em;
 		}
 		.smiley-span {
 			&:after {
-				opacity:1;
+				opacity: 1;
 			}
 		}
 	}
 
 	.circle-load.c-100 {
 		&:after {
-			clip: rect(0px,250px,250px,0px);
+			clip: rect(0px, 250px, 250px, 0px);
 		}
 	}
 
 	.circle-load.c-75 {
 		&:after {
-			clip: rect(0px,170px,200px,0px);
-			transform:rotate(-405deg);
+			clip: rect(0px, 170px, 200px, 0px);
+			transform: rotate(-405deg);
 		}
 	}
 }

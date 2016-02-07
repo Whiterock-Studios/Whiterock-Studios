@@ -75,7 +75,7 @@ document.addEventListener( "DOMContentLoaded" , function ()
 
 			circleLoad();
 
-			circleInterval = setInterval( circleLoad , 1000 );
+			circleInterval = setInterval( circleLoad , 800 );
 		}
 	}
 
