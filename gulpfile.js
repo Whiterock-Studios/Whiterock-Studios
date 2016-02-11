@@ -10,7 +10,7 @@ var gulp = require( 'gulp' ) ,
 
 gulp.task( 'javascripts' , function ()
 {
-	return gulp.src( [ 'vendor/layzr/layzr.min.js' , 'vendor/headroom/headroom.js' , 'assets/javascripts/_*.js' ] )
+	return gulp.src( [ 'vendor/layzr/layzr.min.js' , 'vendor/headroom/headroom.js' , 'vendor/gsap/TweenMax.min.js' , 'assets/javascripts/_*.js' ] )
 			   .pipe( plumb() )
 			   .pipe( concat( 'main.js' ) )
 			   .pipe( gulp.dest( 'assets/javascripts' ) )

@@ -1,7 +1,6 @@
 document.addEventListener( "DOMContentLoaded" , function ()
 {
 
-	console.log( "DOM Loaded" );
 	var circleTop = (document.getElementById( "circle-1" ).offsetTop) + 500 ,
 		windowScroll = window.pageYOffset || document.documentElement.scrollTop ,
 		circleCounter = 1 ,
@@ -22,9 +21,7 @@ document.addEventListener( "DOMContentLoaded" , function ()
 
 		windowScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-		console.log( "WindowScroll = " + windowScroll + " Circle Scroll = " + circleTop
-		)
-		;
+
 		if ( circleTop <= windowScroll && x == 0 ) {
 
 			x = 1;
